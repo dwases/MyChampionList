@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34003.232
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyChampionList.Web", "MyChampionList.Web\MyChampionList.Web.csproj", "{8229BBA7-B98C-45CC-978A-3221E88FFF1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyChampionList.Web", "MyChampionList.Web\MyChampionList.Web.csproj", "{8229BBA7-B98C-45CC-978A-3221E88FFF1E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{3893C066-F07D-4F91-8CC3-E4B8811E2E05}"
 EndProject
@@ -15,13 +15,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{2107CF4F-083D-4803-90AF-81F7A815A518}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyChampionList.Application", "MyChampionList.Application\MyChampionList.Application.csproj", "{EF44DA64-6356-4DC8-9192-DF669C59E09E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyChampionList.Application", "MyChampionList.Application\MyChampionList.Application.csproj", "{EF44DA64-6356-4DC8-9192-DF669C59E09E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyChampionList.Domain", "MyChampionList.Domain\MyChampionList.Domain.csproj", "{53202777-8453-4BDA-ADE2-92C76B4936E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyChampionList.Domain", "MyChampionList.Domain\MyChampionList.Domain.csproj", "{53202777-8453-4BDA-ADE2-92C76B4936E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyChampionList.Infrastructure", "MyChampionList.Infrastructure\MyChampionList.Infrastructure.csproj", "{1853A836-84E9-4DA9-8574-57E4BFB12C98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyChampionList.Infrastructure", "MyChampionList.Infrastructure\MyChampionList.Infrastructure.csproj", "{1853A836-84E9-4DA9-8574-57E4BFB12C98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyChampionList.Tests", "MyChampionList.Tests\MyChampionList.Tests.csproj", "{9602396B-011B-4E1C-9BA2-90B1373B96B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyChampionList.Tests", "MyChampionList.Tests\MyChampionList.Tests.csproj", "{9602396B-011B-4E1C-9BA2-90B1373B96B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestClassLibrary", "TestClassLibrary\TestClassLibrary.csproj", "{32F96DEE-E9B3-488F-B0D6-36E1B9F1BCF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestForTestTemplate", "TestForTestTemplate\TestForTestTemplate.csproj", "{B8D06BE8-66A5-4DA0-B004-94DF00C007BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +53,14 @@ Global
 		{9602396B-011B-4E1C-9BA2-90B1373B96B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9602396B-011B-4E1C-9BA2-90B1373B96B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9602396B-011B-4E1C-9BA2-90B1373B96B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32F96DEE-E9B3-488F-B0D6-36E1B9F1BCF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32F96DEE-E9B3-488F-B0D6-36E1B9F1BCF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32F96DEE-E9B3-488F-B0D6-36E1B9F1BCF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32F96DEE-E9B3-488F-B0D6-36E1B9F1BCF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8D06BE8-66A5-4DA0-B004-94DF00C007BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8D06BE8-66A5-4DA0-B004-94DF00C007BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8D06BE8-66A5-4DA0-B004-94DF00C007BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8D06BE8-66A5-4DA0-B004-94DF00C007BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +71,8 @@ Global
 		{53202777-8453-4BDA-ADE2-92C76B4936E5} = {D8BA4E63-EB52-46D1-B946-E41A9C1998F0}
 		{1853A836-84E9-4DA9-8574-57E4BFB12C98} = {A59541A3-4D79-4E27-B7E6-8FDB24534C9C}
 		{9602396B-011B-4E1C-9BA2-90B1373B96B1} = {2107CF4F-083D-4803-90AF-81F7A815A518}
+		{32F96DEE-E9B3-488F-B0D6-36E1B9F1BCF2} = {A59541A3-4D79-4E27-B7E6-8FDB24534C9C}
+		{B8D06BE8-66A5-4DA0-B004-94DF00C007BA} = {2107CF4F-083D-4803-90AF-81F7A815A518}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0AF75EB7-07E8-4937-BEBC-67DF56598700}
