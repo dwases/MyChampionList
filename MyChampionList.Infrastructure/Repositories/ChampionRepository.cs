@@ -40,5 +40,10 @@ namespace MyChampionList.Infrastructure.Repositories
         {
             return _context.Champions.FirstOrDefault(i => i.Id == champId);
         }
+
+        public IQueryable<Champion> GetAllChampions()
+        {
+            return _context.Champions.Where(i => i.Id != null);
+        }
     }
 }

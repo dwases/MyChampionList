@@ -13,5 +13,6 @@ namespace MyChampionList.Domain.Interfaces
         int AddChampion(Champion champion);
         IQueryable<Champion> GetChampionsByRoleId(int roleId);
         Champion GetChampionById(int champId);
+        IQueryable<Champion> GetAllChampions();
     }
 }

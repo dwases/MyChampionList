@@ -1,6 +1,9 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using MyChampionList.Application;
+using MyChampionList.Domain.Interfaces;
 using MyChampionList.Infrastructure;
+using MyChampionList.Infrastructure.Repositories;
 //using MyChampionList.Web.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,6 +17,11 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<Context>();
 builder.Services.AddControllersWithViews();
+//cutsom lines
+builder.Services.AddApplication();
+builder.Services.AddInfrastructure();
+builder.Services.AddTransient<IChampionRepository, ChampionRepository>();
+//
 
 var app = builder.Build();
 

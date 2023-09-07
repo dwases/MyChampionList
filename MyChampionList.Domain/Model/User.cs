@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 namespace MyChampionList.Domain.Model
 {
-    public class Role
+    public class User
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public virtual ICollection<Role> Roles { get; set; }
+        public string Password { get; set; }
+        public int TrueLoveId { get; set; }
+        public ICollection<LikedChamp> LikedChamps { get; set; }
+        public ICollection<TrashedChamp> TrashedChamps { get; set; }
     }
 }
